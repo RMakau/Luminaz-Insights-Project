@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #002244;
+    padding: 35px 0;
+    padding-right:5px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Header */
+header {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Sections */
+.section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.section .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #002244;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section p,
+.section ul,
+.section li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+/* Team Members */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #002244;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}

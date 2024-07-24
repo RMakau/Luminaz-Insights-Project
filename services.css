@@ -1,0 +1,217 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #002244;
+    padding: 35px 0;
+    padding-right:30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Services Section */
+.services-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.services-section h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #002244;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.service-card h2 {
+    font-size: 24px;
+    color: #002244;
+    margin: 20px 0 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 20px 20px;
+}
+
+.get-service-btn {
+    background-color: #002244;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.get-service-btn:hover {
+    background-color: #ffcc00;
+    color: #002244;
+}
+
+/* Subscribe to Newsletter Section */
+.cta {
+    background-color: #002244;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cta input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.cta button {
+    background-color: #ffcc00;
+    color: #002244;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: #ffffff;
+    color: #002244;
+}
+
+/* Footer */
+footer {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+footer .footer-section {
+    margin: 10px 0;
+}
+
+footer .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer .footer-section p,
+footer .footer-section a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .footer-section a:hover {
+    color: #ffcc00;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 40px);
+    }
+
+    .cta form {
+        flex-direction: column;
+    }
+
+    .cta input[type="email"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: calc(100% - 40px);
+    }
+}

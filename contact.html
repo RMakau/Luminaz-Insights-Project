@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminaz Insights - Contact Us</title>
+    <link rel="stylesheet" href="contactUs.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Login/Register</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to reach out to us using the contact form below or through our help desk.</p>
+            <div class="contact-details">
+                <div class="detail-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@luminazinsights.com">info@luminazinsights.com</a></p>
+                </div>
+                <div class="detail-item">
+                    <h3>Phone</h3>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Address</h3>
+                    <p>123 Insight Lane, Suite 456<br>City, State, 78901</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Contact Form</h2>
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="live-chat">
+            <h2>Live Chat</h2>
+            <button id="chat-btn" class="chat-btn">Start Live Chat</button>
+            <div id="chat-box" class="chat-box" style="display: none;">
+                <div class="chat-header">
+                    <h3>Live Chat Support</h3>
+                    <button id="close-chat" class="close-chat-btn">×</button>
+                </div>
+                <div class="chat-content">
+                    <div class="chat-messages" id="chat-messages"></div>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="chat-input" placeholder="Type your message...">
+                    <button id="send-chat" class="send-chat-btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="help-desk">
+            <h2>Help Desk</h2>
+            <p>For more extensive support, visit our <a href="helpdesk.html">Help Desk</a> where you can find FAQs and submit support tickets.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@luminazinsights.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">LinkedIn</a></p>
+                <p><a href="#">Facebook</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luminaz Insights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="contactUs.js"></script>
+</body>
+</html>

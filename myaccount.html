@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Luminaz Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="myaccount.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Message -->
+        <section class="welcome">
+            <h1>Welcome to Luminaz Insights!</h1>
+            <p>Manage your account and explore our services.</p>
+        </section>
+
+        <!-- Client Profile Section -->
+        <section class="profile">
+            <div class="profile-info">
+                <div class="profile-pic">
+                    <img src="Baloteli.JPG" alt="Profile Picture">
+                </div>
+                <div class="personal-info">
+                    <p><strong>Name:</strong> Mario Baloteli</p>
+                    <p><strong>Email:</strong> supermario@gmail.com</p>
+                    <p><strong>Phone:</strong> 0734567890</p>
+                    <button class="edit-profile-btn">Edit Profile</button>
+                </div>
+            </div>
+            <div class="account-settings">
+                <h3>Account Settings</h3>
+                <ul>
+                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">Notification Preferences</a></li>
+                    <li><a href="#">Privacy Settings</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Apply for Service Section -->
+        <section class="apply-service">
+            <h2>Apply for Service</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="project-title">Project Title:</label>
+                <input type="text" id="project-title" name="project-title" required>
+    
+                <label for="duration">Duration of Project:</label>
+                <input type="text" id="duration" name="duration" required>
+    
+                <label for="social-media-link">Social Media/Website Link:</label>
+                <input type="url" id="social-media-link" name="social-media-link">
+                <p>Or</p>
+                <label for="data-upload">Upload Data for Sentiment Analysis:</label>
+                <input type="file" id="data-upload" name="data-upload" accept=".csv,.xlsx,.txt" required>
+    
+                <div class="service-type">
+                    <label for="service-type">Type of Service:</label>
+                    <select id="service-type" name="service-type">
+                        <option value="analysis">Sentiment Analysis</option>
+                        <option value="reporting">Reporting</option>
+                        <option value="consulting">Consulting</option>
+                    </select>
+                </div>
+    
+                <label for="payment-method">Payment Method:</label>
+                <div class="payment-methods">
+                    <i class="fab fa-paypal"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fas fa-money-bill-alt"></i>
+                </div>
+                <select id="payment-method" name="payment-method">
+                    <option value="mpesa">Mpesa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="visacard">VisaCard</option>
+                </select>
+                <button type="button" class="pay-btn">Pay</button>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </section>
+
+        <!-- Service History Section -->
+        <section class="service-history">
+            <h2>Service History</h2>
+            <div class="search-filter">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" placeholder="Search by project name">
+        
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date">
+        
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date">
+        
+                <button class="search-btn">Search</button>
+            </div>
+            <ul class="project-list">
+                <li>
+                    <h3>Project Title</h3>
+                    <p>Timeline: Jan 2023 - Mar 2023</p>
+                    <p>Status: Completed</p>
+                    <a href="#">View Details</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Downloads Section -->
+        <section class="downloads">
+            <h2>My Downloads</h2>
+            <ul class="file-list">
+                <li><a href="#">Contract.pdf</a></li>
+                <li><a href="#">Report.docx</a></li>
+                <li><a href="#">Analysis Results.xlsx</a></li>
+                <li><a href="#">Receipts.pdf</a></li>
+            </ul>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="feedback">
+            <h2>Feedback</h2>
+            <form action="#" method="POST">
+                <label for="feedback">How can we improve your experience?:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+                <button type="submit" class="submit-feedback-btn">Submit Feedback</button>
+            </form>
+        </section>
+
+        <!-- Notifications Section -->
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <ul class="notification-list">
+                <li>New message received</li>
+                <li>Project update: Project XYZ</li>
+                <li>Service change notification</li>
+                <li>Acknowledgment of payment received</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="logout">
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="myaccount.js"></script>
+</body>
+</html>

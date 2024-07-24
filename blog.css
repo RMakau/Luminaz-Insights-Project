@@ -1,0 +1,210 @@
+/* General Body and Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* General text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #002244; /* Dark Blue */
+    padding: 35px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff; /* White color for nav links */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar a.active {
+    background-color: #ffcc00; /* Highlight color for active link */
+    color: #000; /* Dark text color for readability */
+    border-radius: 5px;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    margin: 2rem;
+}
+
+.blog-posts h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #002244; /* Dark Blue for headings */
+}
+
+.post {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-bottom: 0.5rem;
+    color: #002244; /* Dark Blue for headings */
+}
+
+.post p {
+    margin-bottom: 1rem;
+    color: #777; /* Gray color for text */
+}
+
+/* Read More Button */
+.post a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #002244; /* Dark Blue */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.post a:hover {
+    background-color: #001122; /* Darker Blue */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.post a:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.5); /* Custom focus ring */
+}
+
+/* Sidebar Widgets */
+.sidebar {
+    margin: 2rem 0;
+}
+
+.widget {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.widget h3 {
+    margin-top: 0;
+    color: #002244; /* Dark Blue for headings */
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 0.5rem;
+}
+
+.widget ul li a {
+    color: #002244; /* Dark Blue for links */
+    text-decoration: none;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+/* CTA Section */
+.cta {
+    background: #e6e6e6;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta h2 {
+    color: #002244; /* Dark Blue for headings */
+}
+
+.cta p {
+    color: #333; /* General text color */
+}
+
+.cta form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.cta input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.cta button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #002244; /* Dark Blue */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: #001122; /* Darker Blue */
+}
+
+/* Footer */
+footer {
+    background: #002244; /* Dark Blue */
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0.5rem;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section p a {
+    color: #ffcc00; /* Highlight color for footer links */
+    text-decoration: none;
+}
+
+.footer-section p a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 0.5rem 0;
+    background: #001122; /* Darker Blue */
+}

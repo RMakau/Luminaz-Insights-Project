@@ -1,0 +1,449 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+.header {
+    background-color: #002244; /* Matching color */
+    color: #ffffff;
+    padding: 35px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #ffcc00;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #03141b; /* Matching color */
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Vacancies section styling */
+.vacancies {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.vacancies h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+.job-listing {
+    background-color: #f4f4f4;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.job-listing h3 {
+    font-size: 22px;
+    color: #333333;
+}
+
+.job-listing p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.job-listing button {
+    display: inline-block;
+    background-color: #002244; /* Matching color */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.job-listing button:hover {
+    background-color: #001122;
+}
+
+/* Job Alerts section styling */
+.job-alerts {
+    background-color: #001f3f;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.job-alerts h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.job-alerts p {
+    font-size: 16px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.job-alerts form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job-alerts input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #17053a;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.job-alerts button {
+    background-color: #6bbe0c; /* Matching color */
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.job-alerts button:hover {
+    background-color: #001122;
+}
+
+/* Why Join Us section styling */
+.why-join-us {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-join-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.why-join-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why-join-us ul li {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+/* Application Process section styling */
+.application-process {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.application-process h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.application-process ol {
+    list-style: decimal;
+    padding: 0 20px;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Footer */
+footer {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content form div {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.modal-content form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.modal-content form input[type="text"],
+.modal-content form input[type="email"],
+.modal-content form input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content form button {
+    background-color: #002244; /* Matching color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content form button:hover {
+    background-color: #001122;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .job-listing {
+        width: 90%;
+    }
+
+    .job-alerts input[type="email"] {
+        width: 100%;
+        max-width: none;
+    }
+
+    .why-join-us ul {
+        padding-left: 0;
+    }
+
+    .application-process ol {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .job-listing h3 {
+        font-size: 20px;
+    }
+
+    .job-listing p {
+        font-size: 14px;
+    }
+
+    .why-join-us ul li {
+        font-size: 14px;
+    }
+
+    .application-process h2 {
+        font-size: 24px;
+    }
+
+    .application-process ol {
+        font-size: 14px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .job-listing h3 {
+        font-size: 18px;
+    }
+
+    .job-listing p {
+        font-size: 12px;
+    }
+
+    .why-join-us ul li {
+        font-size: 12px;
+    }
+
+    .application-process h2 {
+        font-size: 20px;
+    }
+
+    .application-process ol {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#logout-btn {
+    background-color: #1e3a5f; /* Dark blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logout-btn:hover {
+    background-color: #16324a; /* Darker blue color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Center the welcome text */
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    color: #1e3a5f; /* Dark blue color */
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: #1e3a5f; /* Dark blue color */
+}
+
+h1, h2, h3 {
+    color: #1e3a5f; /* Dark blue color */
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.profile-info {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.edit-profile-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1e3a5f; /* Dark blue color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-profile-btn:hover {
+    background-color: #16324a; /* Darker blue color */
+}
+
+.account-settings {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.account-settings h3 {
+    margin-bottom: 10px;
+}
+
+.account-settings ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-settings li {
+    margin-bottom: 10px;
+}
+
+.account-settings a {
+    color: #1e3a5f; /* Dark blue color */
+    text-decoration: none;
+}
+
+.account-settings a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+/* Style and reduce the width of input fields */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form textarea {
+    width: 70%; /* Reduced width */
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #1e3a5f; /* Dark blue border */
+    border-radius: 5px;
+}
+
+.payment-methods i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.submit-btn, .pay-btn, .submit-feedback-btn {
+    background-color: #1e3a5f; /* Dark blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover, .pay-btn:hover, .submit-feedback-btn:hover {
+    background-color: #16324a; /* Darker blue color */
+}
+
+* Style for the search-filter container */
+.search-filter {
+    display: flex;
+    flex-wrap: wrap; /* Wraps items to next line if needed */
+    align-items: center;
+    gap: 15px; /* Spacing between elements */
+    margin-bottom: 20px;
+}
+
+/* Style for search-filter labels and inputs */
+/* General styles for the service history section */
+.service-history {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style for the search-filter container */
+.search-filter {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between elements */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Style for search-filter labels */
+.search-filter label {
+    margin-right: 10px; /* Space between label and input */
+    color: #1e3a5f; /* Dark blue color */
+}
+
+/* Style for search-filter input fields */
+.search-filter input[type="text"],
+.search-filter input[type="date"] {
+    padding: 10px;
+    border: 1px solid #1e3a5f; /* Dark blue border */
+    border-radius: 5px;
+    width: 150px; /* Adjusted width for better fit */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+/* Style for the search button */
+.search-filter .search-btn {
+    padding: 10px 20px;
+    background-color: #1e3a5f; /* Dark blue color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-filter .search-btn:hover {
+    background-color: #16324a; /* Darker blue color */
+}
+
+/* Adjust the project-list styling for better layout */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    border: 1px solid #1e3a5f; /* Dark blue border */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff; /* White background for content */
+}
+
+.project-list li h3 {
+    margin-top: 0;
+    color: #1e3a5f; /* Dark blue color for headings */
+}
+
+.project-list li a {
+    color: #1e3a5f;
+    text-decoration: none;
+}
+
+.project-list li a:hover {
+    text-decoration: underline;
+}
+
+.file-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.file-list li {
+    margin-bottom: 10px;
+}
+
+.file-list a {
+    color: #1e3a5f; /* Dark blue color */
+    text-decoration: none;
+}
+
+.file-list a:hover {
+    text-decoration: underline;
+}
+
+.notification-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.notification-list li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1e3a5f; /* Dark blue color */
+    border-radius: 5px;
+    width: 50%; /* Reduced width */
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+textarea {
+    border: 1px solid #1e3a5f; /* Dark blue border */
+    border-radius: 5px;
+}

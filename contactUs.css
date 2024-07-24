@@ -1,0 +1,338 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #002244;
+    padding: 35px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    color: #002244;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.detail-item {
+    margin-bottom: 20px;
+}
+
+.detail-item h3 {
+    font-size: 24px;
+    color: #002244;
+}
+
+.detail-item p {
+    font-size: 18px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.form-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background-color: #002244;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #001122;
+}
+
+/* Live Chat */
+.live-chat {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.live-chat h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chat-btn {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-btn:hover {
+    background-color: #001122;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-content {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    font-size: 14px;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-chat-btn {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.send-chat-btn:hover {
+    background-color: #001122;
+}
+
+/* Help Desk */
+.help-desk {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.help-desk h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.help-desk p {
+    font-size: 18px;
+}
+
+.help-desk a {
+    color: #002244;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-desk a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-item {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container,
+    .live-chat,
+    .help-desk {
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .chat-box {
+        width: 100%;
+        right: 0;
+    }
+
+    .chat-header,
+    .chat-footer {
+        padding: 8px;
+    }
+
+    .send-chat-btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

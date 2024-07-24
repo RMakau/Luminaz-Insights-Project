@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminaz Insights - Login/Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a class="active" href="register.html">Login/Register</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2 id="form-title">Log In</h2>
+            <form id="auth-form" class="form" action="/login" method="POST">
+                <!-- Login Fields -->
+                <div id="login-fields">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email address" required>
+                        <div class="error-message" id="login-email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                        <button type="button" class="show-hide-btn">Show</button>
+                        <div class="error-message" id="login-password-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                </div>
+                <!-- Register Fields -->
+                <div id="register-fields" style="display: none;">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+                        <div class="error-message" id="first-name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+                        <div class="error-message" id="last-name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email Address</label>
+                        <input type="email" id="register-email" name="email" placeholder="Enter your email address" required>
+                        <div class="error-message" id="register-email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-email">Confirm Email Address</label>
+                        <input type="email" id="confirm-email" name="confirm_email" placeholder="Confirm your email address" required>
+                        <div class="error-message" id="confirm-email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone" placeholder="Enter your phone number" required>
+                        <div class="error-message" id="phone-number-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" name="password" placeholder="Create a password" required>
+                        <button type="button" class="show-hide-btn">Show</button>
+                        <div class="password-strength"></div>
+                        <div class="error-message" id="register-password-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+                        <div class="error-message" id="confirm-password-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                        <div class="error-message" id="terms-error"></div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn" id="submit-btn">Log In</button>
+                <p id="form-toggle">
+                    Don't have an account? <a href="#" id="switch-to-register">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+    
+</body>
+</html>
